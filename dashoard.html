@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Ilaro University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portal-page">
+    <header class="portal-header">
+        <nav class="portal-nav">
+            <div class="portal-logo">
+                <h1>Student Portal</h1>
+            </div>
+            <div class="portal-user">
+                <div class="user-info">
+                    <span class="user-name">John Doe</span>
+                    <span class="user-id">ID: ILR/2024/001</span>
+                </div>
+                <div class="user-actions">
+                    <button class="notifications-btn" aria-label="Notifications">
+                        <span class="notification-icon">🔔</span>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <div class="user-menu">
+                        <button class="profile-btn">
+                            <img src="../../images/profile-placeholder.jpg" alt="Profile" class="profile-pic">
+                            <span class="dropdown-icon">▼</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="profile.html">My Profile</a>
+                            <a href="settings.html">Settings</a>
+                            <a href="login.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="portal-layout">
+        <aside class="portal-sidebar">
+            <nav class="portal-menu">
+                <a href="dashboard.html" class="menu-item active">
+                    <span class="menu-icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="courses.html" class="menu-item">
+                    <span class="menu-icon">📚</span>
+                    Courses
+                </a>
+                <a href="results.html" class="menu-item">
+                    <span class="menu-icon">📝</span>
+                    Results
+                </a>
+                <a href="registration.html" class="menu-item">
+                    <span class="menu-icon">📋</span>
+                    Registration
+                </a>
+                <a href="payments.html" class="menu-item">
+                    <span class="menu-icon">💳</span>
+                    Payments
+                </a>
+                <a href="library.html" class="menu-item">
+                    <span class="menu-icon">📖</span>
+                    Library
+                </a>
+                <a href="resources.html" class="menu-item">
+                    <span class="menu-icon">🗂️</span>
+                    Resources
+                </a>
+            </nav>
+        </aside>
+
+        <main class="portal-main">
+            <div class="dashboard-welcome">
+                <h2>Welcome back, John!</h2>
+                <p>Current Semester: First Semester 2023/2024</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card quick-stats">
+                    <h3>Academic Overview</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">CGPA</span>
+                            <span class="stat-value">3.75</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Credits Earned</span>
+                            <span class="stat-value">85</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Current Level</span>
+                            <span class="stat-value">300</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Department</span>
+                            <span class="stat-value">Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card current-courses">
+                    <h3>Current Courses</h3>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <div class="course-info">
+                                <h4>CSC301 - Database Management</h4>
+                                <p>Dr. Sarah Johnson</p>
+                            </div>
+                            <span class="course-status completed">Registered</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-info">
+                                <h4>CSC302 - Data Structures</h4>
+                                <p>Prof. Michael Chen</p>
+                            </div>
+                            <span class="course-status completed">Registered</span>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-info">
+                                <h4>CSC303 - Software Engineering</h4>
+                                <p>Dr. James Wilson</p>
+                            </div>
+                            <span class="course-status pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card upcoming-events">
+                    <h3>Upcoming Events</h3>
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="date">15</span>
+                                <span class="month">Mar</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Mid-Semester Examination</h4>
+                                <p>CSC301 - Database Management</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="date">20</span>
+                                <span class="month">Mar</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Project Submission</h4>
+                                <p>CSC302 - Data Structures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card recent-notifications">
+                    <h3>Recent Notifications</h3>
+                    <div class="notification-list">
+                        <div class="notification-item unread">
+                            <div class="notification-icon">📢</div>
+                            <div class="notification-content">
+                                <h4>Course Registration Deadline</h4>
+                                <p>Course registration closes in 3 days. Complete your registration.</p>
+                                <span class="notification-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item unread">
+                            <div class="notification-icon">📝</div>
+                            <div class="notification-content">
+                                <h4>New Assignment Posted</h4>
+                                <p>New assignment posted for CSC301 - Database Management</p>
+                                <span class="notification-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item">
+                            <div class="notification-icon">💰</div>
+                            <div class="notification-content">
+                                <h4>Payment Confirmation</h4>
+                                <p>Your tuition payment has been processed successfully</p>
+                                <span class="notification-time">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <a href="registration.html" class="action-btn">
+                        <span class="action-icon">📋</span>
+                        Course Registration
+                    </a>
+                    <a href="results.html" class="action-btn">
+                        <span class="action-icon">📊</span>
+                        View Results
+                    </a>
+                    <a href="payments.html" class="action-btn">
+                        <span class="action-icon">💳</span>
+                        Make Payment
+                    </a>
+                    <a href="timetable.html" class="action-btn">
+                        <span class="action-icon">📅</span>
+                        View Timetable
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Toggle user dropdown menu
+        document.querySelector('.profile-btn').addEventListener('click', function() {
+            document.querySelector('.dropdown-menu').classList.toggle('show');
+        });
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(e) {
+            if (!e.target.matches('.profile-btn') && !e.target.matches('.dropdown-icon')) {
+                const dropdown = document.querySelector('.dropdown-menu');
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable - Ilaro University</title>
+    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Ilaro University Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation items -->
+        </nav>
+    </header>
+
+    <main class="timetable-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Class Timetable</h1>
+                <p>View and manage your academic schedule</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="timetable-wrapper">
+                <aside class="timetable-sidebar">
+                    <div class="student-info">
+                        <div class="student-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="student-details">
+                            <h3>Student Information</h3>
+                            <p class="student-name">S1212020G1</p>
+                            <p class="student-id">ILR/2024/001234</p>
+                            <p class="student-dept">Computer Science</p>
+                            <p class="student-level">300 Level</p>
+                            <p class="student-semester">First Semester</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timetable-filters">
+                        <h3>Filters</h3>
+                        <div class="filter-group">
+                            <label for="semester">Semester</label>
+                            <select id="semester">
+                                <option value="1">First Semester</option>
+                                <option value="2">Second Semester</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="view">View</label>
+                            <select id="view">
+                                <option value="week">Week View</option>
+                                <option value="day">Day View</option>
+                                <option value="list">List View</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="quick-stats">
+                        <h3>Quick Stats</h3>
+                        <div class="stat-item">
+                            <i class="fas fa-book"></i>
+                            <div class="stat-info">
+                                <span>Total Courses</span>
+                                <strong>8</strong>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="stat-info">
+                                <span>Credit Hours</span>
+                                <strong>24</strong>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <div class="stat-info">
+                                <span>Classes Today</span>
+                                <strong>3</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-download">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn-sync">
+                            <i class="fas fa-sync"></i> Sync Calendar
+                        </button>
+                    </div>
+                </aside>
+
+                <div class="timetable-content">
+                    <div class="timetable-header">
+                        <div class="current-week">
+                            <button class="btn-nav prev"><i class="fas fa-chevron-left"></i></button>
+                            <h2>December 11 - 17, 2024</h2>
+                            <button class="btn-nav next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="view-options">
+                            <button class="btn-today">Today</button>
+                        </div>
+                    </div>
+
+                    <div class="timetable-grid week-view">
+                        <div class="time-slots">
+                            <div class="time-header">Time</div>
+                            <div class="time-slot">8:00 AM</div>
+                            <div class="time-slot">9:00 AM</div>
+                            <div class="time-slot">10:00 AM</div>
+                            <div class="time-slot">11:00 AM</div>
+                            <div class="time-slot">12:00 PM</div>
+                            <div class="time-slot">1:00 PM</div>
+                            <div class="time-slot">2:00 PM</div>
+                            <div class="time-slot">3:00 PM</div>
+                            <div class="time-slot">4:00 PM</div>
+                            <div class="time-slot">5:00 PM</div>
+                        </div>
+
+                        <div class="day-column">
+                            <div class="day-header">Monday</div>
+                            <div class="class-slot physics" style="grid-row: 2 / 4;">
+                                <h4>Physics</h4>
+                                <p>PHY 301</p>
+                                <p>8:00 AM - 10:00 AM</p>
+                                <p>Room: PHY Lab 1</p>
+                            </div>
+                            <div class="class-slot mathematics" style="grid-row: 5 / 7;">
+                                <h4>Mathematics</h4>
+                                <p>MTH 302</p>
+                                <p>11:00 AM - 1:00 PM</p>
+                                <p>Room: LT 2</p>
+                            </div>
+                        </div>
+
+                        <div class="day-column">
+                            <div class="day-header">Tuesday</div>
+                            <div class="class-slot chemistry" style="grid-row: 3 / 5;">
+                                <h4>Chemistry</h4>
+                                <p>CHM 301</p>
+                                <p>9:00 AM - 11:00 AM</p>
+                                <p>Room: CHM Lab 2</p>
+                            </div>
+                            <div class="class-slot computer" style="grid-row: 7 / 9;">
+                                <h4>Programming</h4>
+                                <p>CSC 301</p>
+                                <p>1:00 PM - 3:00 PM</p>
+                                <p>Room: CS Lab 1</p>
+                            </div>
+                        </div>
+
+                        <div class="day-column">
+                            <div class="day-header">Wednesday</div>
+                            <div class="class-slot biology" style="grid-row: 4 / 6;">
+                                <h4>Biology</h4>
+                                <p>BIO 301</p>
+                                <p>10:00 AM - 12:00 PM</p>
+                                <p>Room: BIO Lab 1</p>
+                            </div>
+                        </div>
+
+                        <div class="day-column">
+                            <div class="day-header">Thursday</div>
+                            <div class="class-slot english" style="grid-row: 2 / 4;">
+                                <h4>English</h4>
+                                <p>ENG 301</p>
+                                <p>8:00 AM - 10:00 AM</p>
+                                <p>Room: LT 5</p>
+                            </div>
+                            <div class="class-slot physics-lab" style="grid-row: 6 / 8;">
+                                <h4>Physics Lab</h4>
+                                <p>PHY 301L</p>
+                                <p>12:00 PM - 2:00 PM</p>
+                                <p>Room: PHY Lab 2</p>
+                            </div>
+                        </div>
+
+                        <div class="day-column">
+                            <div class="day-header">Friday</div>
+                            <div class="class-slot chemistry-lab" style="grid-row: 3 / 5;">
+                                <h4>Chemistry Lab</h4>
+                                <p>CHM 301L</p>
+                                <p>9:00 AM - 11:00 AM</p>
+                                <p>Room: CHM Lab 1</p>
+                            </div>
+                            <div class="class-slot computer-lab" style="grid-row: 7 / 9;">
+                                <h4>Programming Lab</h4>
+                                <p>CSC 301L</p>
+                                <p>1:00 PM - 3:00 PM</p>
+                                <p>Room: CS Lab 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upcoming-classes">
+                        <h3>Upcoming Classes</h3>
+                        <div class="upcoming-list">
+                            <div class="upcoming-item">
+                                <div class="upcoming-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Today, 2:00 PM</span>
+                                </div>
+                                <div class="upcoming-details">
+                                    <h4>Programming Lab</h4>
+                                    <p>CSC 301L - CS Lab 2</p>
+                                </div>
+                                <div class="upcoming-status">
+                                    <span class="status upcoming">Upcoming</span>
+                                </div>
+                            </div>
+                            <div class="upcoming-item">
+                                <div class="upcoming-time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Tomorrow, 9:00 AM</span>
+                                </div>
+                                <div class="upcoming-details">
+                                    <h4>Chemistry</h4>
+                                    <p>CHM 301 - CHM Lab 2</p>
+                                </div>
+                                <div class="upcoming-status">
+                                    <span class="status tomorrow">Tomorrow</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="classModal" class="modal">
+            <div class="modal-content class-modal">
+                <span class="close-modal">&times;</span>
+                <div class="class-details">
+                    <h2>Class Details</h2>
+                    <div class="detail-group">
+                        <label>Course</label>
+                        <p>Programming (CSC 301)</p>
+                    </div>
+                    <div class="detail-group">
+                        <label>Schedule</label>
+                        <p>Tuesday, 1:00 PM - 3:00 PM</p>
+                    </div>
+                    <div class="detail-group">
+                        <label>Location</label>
+                        <p>CS Lab 1</p>
+                    </div>
+                    <div class="detail-group">
+                        <label>Instructor</label>
+                        <p>Dr. John Smith</p>
+                    </div>
+                    <div class="detail-group">
+                        <label>Course Materials</label>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-file-pdf"></i> Course Outline</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> Recommended Texts</a></li>
+                            <li><a href="#"><i class="fas fa-tasks"></i> Assignment Schedule</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Timetable Navigation
+        const prevBtn = document.querySelector('.btn-nav.prev');
+        const nextBtn = document.querySelector('.btn-nav.next');
+        const todayBtn = document.querySelector('.btn-today');
+        const weekDisplay = document.querySelector('.current-week h2');
+
+        // View Switching
+        const viewSelect = document.getElementById('view');
+        const timetableGrid = document.querySelector('.timetable-grid');
+
+        viewSelect.addEventListener('change', function() {
+            const view = this.value;
+            timetableGrid.className = 'timetable-grid ' + view + '-view';
+        });
+
+        // Class Modal
+        const modal = document.getElementById('classModal');
+        const classSlots = document.querySelectorAll('.class-slot');
+        const closeModal = document.querySelector('.close-modal');
+
+        classSlots.forEach(slot => {
+            slot.addEventListener('click', () => {
+                modal.style.display = 'block';
+            });
+        });
+
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Download Timetable
+        const downloadBtn = document.querySelector('.btn-download');
+        downloadBtn.addEventListener('click', function() {
+            alert('Downloading timetable as PDF...');
+        });
+
+        // Sync Calendar
+        const syncBtn = document.querySelector('.btn-sync');
+        syncBtn.addEventListener('click', function() {
+            alert('Syncing with calendar...');
+        });
+
+        // Today's Highlight
+        function highlightToday() {
+            const today = new Date().getDay();
+            if (today > 0 && today < 6) {
+                const dayColumns = document.querySelectorAll('.day-column');
+                dayColumns[today - 1].classList.add('today');
+            }
+        }
+
+        highlightToday();
+    </script>
+</body>
+</html>

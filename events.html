@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian University Campus Life & Events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="events2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="University Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Nigerian University Life</h1>
+            <p>Experience the vibrant culture, diversity, and energy of our campus community</p>
+            <div class="event-countdown">
+                <h3>Next Big Event:</h3>
+                <div id="countdown-timer"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section">
+        <div class="container">
+            <h2>Campus Life Introduction</h2>
+            <p>Welcome to the heart of Nigerian university education, where tradition meets modernity, and diversity creates harmony. Our campus life is a unique blend of academic excellence, cultural richness, and social vibrancy.</p>
+            <div class="intro-features">
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Diverse Community</h3>
+                    <p>Home to students from all 36 states and beyond</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic Excellence</h3>
+                    <p>Fostering intellectual growth and innovation</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-culture"></i>
+                    <h3>Rich Culture</h3>
+                    <p>Celebrating our heritage through various events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <!-- Cultural Festivals -->
+            <div class="event-category">
+                <h2>Cultural Festivals</h2>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <img src="img/culture.jpeg" alt="Cultural Day">
+                        <h3>Cultural Day</h3>
+                        <p>Annual celebration of Nigeria's diverse cultural heritage</p>
+                        <button class="register-btn">Register Now</button>
+                    </div>
+                    <!-- Add more event cards -->
+                </div>
+            </div>
+
+            <!-- Social Events -->
+            <div class="event-category">
+                <h2>Social Events</h2>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <img src="img/fresh.jpg" alt="Freshers Night">
+                        <h3>Freshers' Night</h3>
+                        <p>Welcome celebration for new students</p>
+                        <button class="register-btn">Register Now</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Sports and Games -->
+            <div class="event-category">
+                <h2>Sports & Games</h2>
+                <div class="event-cards">
+                    <!-- Sports event cards -->
+                </div>
+            </div>
+
+            <!-- Other event categories... -->
+        </div>
+    </section>
+
+    <!-- Event Schedule -->
+    <section id="schedule" class="section">
+        <div class="container">
+            <h2>Event Schedule</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Add schedule rows -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Event Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Add gallery images -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Map -->
+    <section id="map" class="section">
+        <div class="container">
+            <h2>Event Locations</h2>
+            <div class="map-container">
+                <!-- Add interactive map -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#introduction">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@university.edu.ng</p>
+                    <p>Phone: +234 123 456 7890</p>
+                    <p>Address: University Campus, Nigeria</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Nigerian University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add your JavaScript here
+        // Countdown Timer
+        function updateCountdown() {
+            // Add countdown logic
+        }
+
+        // Gallery
+        function initializeGallery() {
+            // Add gallery functionality
+        }
+
+        // Form Submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form submission logic
+        });
+    </script>
+</body>
+</html>

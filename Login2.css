@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004080;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav .logo h1 {
+    font-size: 1.8rem;
+}
+
+.main-nav .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.main-nav .nav-links li {
+    list-style: none;
+}
+
+.main-nav .nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav .nav-links a:hover {
+    color: #00bfff;
+}
+
+/* Portal Wrapper */
+.portal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(to right, #004080, #007bff);
+    padding: 20px;
+    color: #fff;
+}
+
+.portal-container {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.portal-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+.portal-header p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Login Form */
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.login-form .password-input {
+    position: relative;
+}
+
+.password-input .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+}
+
+.login-form .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-form .form-options .remember-me input {
+    margin-right: 5px;
+}
+
+.login-form .forgot-password {
+    color: #004080;
+    font-size: 0.9rem;
+}
+
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #004080;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #007bff;
+}
+
+/* Help Section */
+.portal-help {
+    margin-top: 20px;
+}
+
+.portal-help h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #004080;
+}
+
+.help-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.help-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    width: 100%;
+    max-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    background: #007bff;
+    color: #fff;
+}
+
+.help-icon {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Notices Section */
+.portal-notices {
+    margin-top: 20px;
+}
+
+.notice-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notice-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.notice-content h4 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background: #004080;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+footer .footer-section {
+    margin-bottom: 15px;
+}
+
+footer .footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+footer .footer-section ul li {
+    margin: 5px 0;
+}
+
+footer .footer-section ul li a {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #00bfff;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .help-options {
+        flex-direction: column;
+    }
+
+    .help-card {
+        width: 80%;
+    }
+}

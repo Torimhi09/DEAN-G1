@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Portal - Ilaro University</title>
+    <link rel="stylesheet" href="course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Ilaro University Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation items -->
+        </nav>
+    </header>
+
+    <main class="registration-portal">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Course Registration Portal</h1>
+                <p>2024/2025 Academic Session</p>
+                <div class="registration-status">
+                    <span class="status-badge active">Registration Open</span>
+                    <span class="deadline">Deadline: January 31, 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration-progress">
+            <div class="container">
+                <div class="progress-tracker">
+                    <div class="progress-step completed">
+                        <div class="step-icon"><i class="fas fa-check"></i></div>
+                        <div class="step-label">Fee Payment</div>
+                    </div>
+                    <div class="progress-step active">
+                        <div class="step-icon">2</div>
+                        <div class="step-label">Course Selection</div>
+                    </div>
+                    <div class="progress-step">
+                        <div class="step-icon">3</div>
+                        <div class="step-label">Advisor Approval</div>
+                    </div>
+                    <div class="progress-step">
+                        <div class="step-icon">4</div>
+                        <div class="step-label">Confirmation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="student-info">
+            <div class="container">
+                <div class="info-card">
+                    <div class="student-details">
+                        <img src="../../images/placeholder-avatar.jpg" alt="Student Photo" class="student-photo">
+                        <div class="details">
+                            <h2>Group 1</h2>
+                            <p>ID: ILR/2021/001</p>
+                            <p>Department: Computer Science</p>
+                            <p>Level: 400</p>
+                            <p>CGPA: 4.50</p>
+                        </div>
+                    </div>
+                    <div class="semester-info">
+                        <div class="info-item">
+                            <span class="label">Current Session:</span>
+                            <span class="value">2024/2025</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Semester:</span>
+                            <span class="value">First</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Maximum Units:</span>
+                            <span class="value">24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-selection">
+            <div class="container">
+                <div class="selection-container">
+                    <div class="course-filters">
+                        <div class="filter-group">
+                            <label for="courseType">Course Type:</label>
+                            <select id="courseType">
+                                <option value="all">All Courses</option>
+                                <option value="core">Core Courses</option>
+                                <option value="elective">Electives</option>
+                                <option value="carryover">Carryover</option>
+                            </select>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search courses...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="course-list">
+                        <h3>Available Courses</h3>
+                        <div class="course-grid">
+                            <div class="course-card">
+                                <div class="course-info">
+                                    <h4>CSC401</h4>
+                                    <p>Software Engineering</p>
+                                    <span class="units">3 Units</span>
+                                    <span class="type core">Core</span>
+                                </div>
+                                <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="course-info">
+                                    <h4>CSC403</h4>
+                                    <p>Artificial Intelligence</p>
+                                    <span class="units">3 Units</span>
+                                    <span class="type elective">Elective</span>
+                                </div>
+                                <button class="btn-add"><i class="fas fa-plus"></i> Add</button>
+                            </div>
+
+                            <!-- More course cards -->
+                        </div>
+                    </div>
+
+                    <div class="selected-courses">
+                        <h3>Selected Courses</h3>
+                        <div class="summary-bar">
+                            <span>Total Units: <strong>15/24</strong></span>
+                            <span>Core: <strong>12</strong></span>
+                            <span>Elective: <strong>3</strong></span>
+                        </div>
+                        <table class="courses-table">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Title</th>
+                                    <th>Units</th>
+                                    <th>Type</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CSC401</td>
+                                    <td>Software Engineering</td>
+                                    <td>3</td>
+                                    <td><span class="type core">Core</span></td>
+                                    <td>
+                                        <button class="btn-remove"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <!-- More selected courses -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prerequisites-warning hidden">
+            <div class="container">
+                <div class="warning-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div class="warning-content">
+                        <h3>Prerequisites Required</h3>
+                        <p>You must complete CSC301 before registering for CSC401.</p>
+                    </div>
+                    <button class="btn-close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="timetable-preview">
+            <div class="container">
+                <h2>Weekly Timetable Preview</h2>
+                <div class="timetable">
+                    <div class="time-slots">
+                        <div class="time-slot">8:00 AM</div>
+                        <div class="time-slot">9:00 AM</div>
+                        <!-- More time slots -->
+                    </div>
+                    <div class="days">
+                        <div class="day">
+                            <h3>Monday</h3>
+                            <div class="classes">
+                                <div class="class-block" style="top: 0; height: 100px;">
+                                    <h4>CSC401</h4>
+                                    <p>8:00 AM - 10:00 AM</p>
+                                    <p>Room: LT1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More days -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-cart">
+            <div class="container">
+                <div class="cart-summary">
+                    <h3>Registration Summary</h3>
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <span>Total Courses:</span>
+                            <span>5</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Total Units:</span>
+                            <span>15/24</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Core Courses:</span>
+                            <span>4</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Electives:</span>
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn-save">Save Draft</button>
+                        <button class="btn-submit">Submit for Approval</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration-guidelines">
+            <div class="container">
+                <h2>Registration Guidelines</h2>
+                <div class="guidelines-grid">
+                    <div class="guideline-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Course Load</h3>
+                        <ul>
+                            <li>Minimum: 15 units</li>
+                            <li>Maximum: 24 units</li>
+                            <li>At least 60% core courses</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Important Dates</h3>
+                        <ul>
+                            <li>Registration Opens: Jan 1, 2025</li>
+                            <li>Registration Closes: Jan 31, 2025</li>
+                            <li>Late Registration: Feb 1-7, 2025</li>
+                        </ul>
+                    </div>
+
+                    <div class="guideline-card">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Requirements</h3>
+                        <ul>
+                            <li>Clear all fees</li>
+                            <li>Complete prerequisites</li>
+                            <li>Advisor approval needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-support">
+            <div class="container">
+                <h2>Need Help?</h2>
+                <div class="support-options">
+                    <div class="support-card">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>FAQs</h3>
+                        <p>Find answers to common registration questions</p>
+                        <a href="#" class="btn-view">View FAQs</a>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Technical Support</h3>
+                        <p>Contact our support team for technical issues</p>
+                        <a href="#" class="btn-contact">Get Help</a>
+                    </div>
+
+                    <div class="support-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Academic Advisor</h3>
+                        <p>Schedule a meeting with your advisor</p>
+                        <a href="#" class="btn-schedule">Schedule Meeting</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Course type filter
+        document.getElementById('courseType').addEventListener('change', function() {
+            // Add filtering logic
+        });
+
+        // Add course button
+        document.querySelectorAll('.btn-add').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add course to selected courses
+            });
+        });
+
+        // Remove course button
+        document.querySelectorAll('.btn-remove').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove course from selected courses
+            });
+        });
+
+        // Close warning
+        document.querySelector('.btn-close')?.addEventListener('click', function() {
+            document.querySelector('.prerequisites-warning').classList.add('hidden');
+        });
+
+        // Submit registration
+        document.querySelector('.btn-submit').addEventListener('click', function() {
+            // Add submission logic
+        });
+    </script>
+</body>
+</html>

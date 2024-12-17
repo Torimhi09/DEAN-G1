@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Payment - Ilaro University</title>
+    <link rel="stylesheet" href="Style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../../images/logo.png" alt="Ilaro University Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation items -->
+        </nav>
+    </header>
+
+    <main class="payment-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Payment Portal</h1>
+                <p>Secure and convenient payment solutions for students</p>
+            </div>
+        </section>
+
+        <section class="payment-navigation">
+            <div class="container">
+                <div class="nav-buttons">
+                    <button class="nav-btn active" data-section="fees">School Fees</button>
+                    <button class="nav-btn" data-section="hostel">Hostel Fees</button>
+                    <button class="nav-btn" data-section="other">Other Payments</button>
+                    <button class="nav-btn" data-section="history">Payment History</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="payment-wrapper">
+                <aside class="payment-sidebar">
+                    <div class="student-info">
+                        <div class="student-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="student-details">
+                            <h3>Student Information</h3>
+                            <p class="student-name">S1212020G1</p>
+                            <p class="student-id">ILR/2024/001234</p>
+                            <p class="student-dept">Computer Science</p>
+                            <p class="student-level">300 Level</p>
+                        </div>
+                    </div>
+                    <div class="payment-summary">
+                        <h3>Payment Summary</h3>
+                        <div class="summary-item">
+                            <span>Total Due</span>
+                            <span class="amount">₦450,000</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Paid</span>
+                            <span class="amount paid">₦200,000</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Balance</span>
+                            <span class="amount balance">₦250,000</span>
+                        </div>
+                    </div>
+                    <div class="payment-deadline">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div class="deadline-info">
+                            <span>Payment Deadline</span>
+                            <strong>March 31, 2025</strong>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="payment-content">
+                    <section id="fees" class="payment-section active">
+                        <h2>School Fees Payment</h2>
+                        <div class="payment-cards">
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <h3>Tuition Fee</h3>
+                                    <span class="status pending">Pending</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="fee-details">
+                                        <div class="fee-item">
+                                            <span>Amount</span>
+                                            <span>₦350,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Paid</span>
+                                            <span>₦150,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Balance</span>
+                                            <span>₦200,000</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-pay">Pay Now</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <h3>Development Fee</h3>
+                                    <span class="status pending">Pending</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="fee-details">
+                                        <div class="fee-item">
+                                            <span>Amount</span>
+                                            <span>₦50,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Paid</span>
+                                            <span>₦25,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Balance</span>
+                                            <span>₦25,000</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-pay">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="hostel" class="payment-section">
+                        <h2>Hostel Fee Payment</h2>
+                        <div class="payment-cards">
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <h3>Hostel Fee</h3>
+                                    <span class="status unpaid">Unpaid</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="fee-details">
+                                        <div class="fee-item">
+                                            <span>Amount</span>
+                                            <span>₦100,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Paid</span>
+                                            <span>₦0</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Balance</span>
+                                            <span>₦100,000</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-pay">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="other" class="payment-section">
+                        <h2>Other Payments</h2>
+                        <div class="payment-cards">
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <h3>Library Fee</h3>
+                                    <span class="status paid">Paid</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="fee-details">
+                                        <div class="fee-item">
+                                            <span>Amount</span>
+                                            <span>₦5,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Paid</span>
+                                            <span>₦5,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Balance</span>
+                                            <span>₦0</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-receipt">Download Receipt</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <h3>ID Card Fee</h3>
+                                    <span class="status paid">Paid</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="fee-details">
+                                        <div class="fee-item">
+                                            <span>Amount</span>
+                                            <span>₦2,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Paid</span>
+                                            <span>₦2,000</span>
+                                        </div>
+                                        <div class="fee-item">
+                                            <span>Balance</span>
+                                            <span>₦0</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-receipt">Download Receipt</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="history" class="payment-section">
+                        <h2>Payment History</h2>
+                        <div class="history-filters">
+                            <div class="filter-group">
+                                <label for="dateRange">Date Range</label>
+                                <select id="dateRange">
+                                    <option value="all">All Time</option>
+                                    <option value="month">Last Month</option>
+                                    <option value="semester">Current Semester</option>
+                                    <option value="year">Current Year</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="paymentType">Payment Type</label>
+                                <select id="paymentType">
+                                    <option value="all">All Types</option>
+                                    <option value="tuition">Tuition Fee</option>
+                                    <option value="hostel">Hostel Fee</option>
+                                    <option value="other">Other Fees</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="history-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th>Reference</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2024-01-15</td>
+                                        <td>Tuition Fee Payment</td>
+                                        <td>TRX123456</td>
+                                        <td>₦150,000</td>
+                                        <td><span class="status-badge success">Successful</span></td>
+                                        <td><button class="btn-download">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2024-01-10</td>
+                                        <td>Development Fee</td>
+                                        <td>TRX123455</td>
+                                        <td>₦25,000</td>
+                                        <td><span class="status-badge success">Successful</span></td>
+                                        <td><button class="btn-download">Receipt</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2023-12-20</td>
+                                        <td>Library Fee</td>
+                                        <td>TRX123454</td>
+                                        <td>₦5,000</td>
+                                        <td><span class="status-badge success">Successful</span></td>
+                                        <td><button class="btn-download">Receipt</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div id="paymentModal" class="modal">
+            <div class="modal-content payment-modal">
+                <span class="close-modal">&times;</span>
+                <h2>Make Payment</h2>
+                <form id="paymentForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="transfer">Bank Transfer</option>
+                            <option value="ussd">USSD</option>
+                        </select>
+                    </div>
+                    <div class="card-details">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiryDate">Expiry Date</label>
+                                <input type="text" id="expiryDate" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Navigation
+        document.querySelectorAll('.nav-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.payment-section').forEach(section => section.classList.remove('active'));
+                
+                this.classList.add('active');
+                document.getElementById(this.dataset.section).classList.add('active');
+            });
+        });
+
+        // Payment Modal
+        const modal = document.getElementById('paymentModal');
+        const payButtons = document.querySelectorAll('.btn-pay');
+        const closeModal = document.querySelector('.close-modal');
+
+        payButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.style.display = 'block';
+            });
+        });
+
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Payment Form
+        document.getElementById('paymentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add payment processing logic here
+            alert('Payment successful!');
+            modal.style.display = 'none';
+        });
+
+        // Payment Method Selection
+        document.getElementById('paymentMethod').addEventListener('change', function() {
+            const cardDetails = document.querySelector('.card-details');
+            if (this.value === 'card') {
+                cardDetails.style.display = 'block';
+            } else {
+                cardDetails.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

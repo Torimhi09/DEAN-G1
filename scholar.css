@@ -1,0 +1,290 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #004080;
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav.main-nav ul li {
+    margin: 0 15px;
+}
+
+nav.main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav.main-nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 64, 128, 0.8), rgba(0, 64, 128, 0.8)), url('images/hero-scholarship.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Scholarship Categories */
+.scholarship-categories {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.scholarship-categories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004080;
+}
+
+.scholarship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.scholarship-card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.card-header i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-header.merit {
+    background-color: #007bff;
+}
+
+.card-header.need-based {
+    background-color: #28a745;
+}
+
+.card-header.sports {
+    background-color: #ffc107;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content ul {
+    margin-bottom: 20px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.card-content ul li::before {
+    content: '\2022';
+    color: #004080;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+.award-value {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.award-value h4 {
+    color: #004080;
+    font-size: 1.5rem;
+}
+
+.btn-apply {
+    display: block;
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-apply:hover {
+    background: #ffd700;
+    color: #004080;
+}
+
+/* Application Process */
+.application-process {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.application-process h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004080;
+}
+
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    background: #004080;
+    color: white;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* Timeline */
+.timeline {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.timeline-item {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .date {
+    font-weight: bold;
+    color: #004080;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004080;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #004080;
+    color: white;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-card {
+    background: #fff;
+    color: #004080;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer.main-footer {
+    padding: 20px;
+    text-align: center;
+    background: #004080;
+    color: white;
+}

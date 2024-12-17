@@ -1,0 +1,298 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: blue;
+    overflow-x: hidden;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #003366;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #f9a825;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('../../images/departments/math-hero.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Section General Styling */
+section {
+    padding: 3rem 2rem;
+    background: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About Section */
+.department-overview {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.overview-text h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.overview-text p {
+    margin-bottom: 1.5rem;
+}
+
+.department-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item .number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f9a825;
+}
+
+.stat-item .label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.overview-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Programs Section */
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.program-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.program-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.program-card p {
+    margin-bottom: 1rem;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #f9a825;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #003366;
+}
+
+/* Research Areas */
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.research-card {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+    transform: scale(1.05);
+}
+
+.research-card i {
+    font-size: 2rem;
+    color: #f9a825;
+    margin-bottom: 0.5rem;
+}
+
+.research-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.research-card ul li {
+    margin: 0.5rem 0;
+}
+
+/* Faculty Section */
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.faculty-card {
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: scale(1.05);
+}
+
+.faculty-card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.faculty-info h3 {
+    color: #003366;
+    font-size: 1.2rem;
+}
+
+.faculty-info p {
+    color: #555;
+}
+
+.contact a {
+    margin: 0 0.5rem;
+    color: #003366;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #f9a825;
+}
+
+/* Facilities */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.facility-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.facility-card h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: #f9a825;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.main-footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}

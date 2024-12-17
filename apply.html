@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to Ilaro University</title>
+    <link rel="stylesheet" href="apply2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <!--<img src="img/logo.jpg" alt="Ilaro University Logo" style="width: 50%; height: auto;">
+-->
+            <img src="img/logo.jpg" alt="Ilaro University Logo" width="150" height="150">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation items -->
+        </nav>
+    </header>
+
+    <main class="application-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Apply to Ilaro University</h1>
+                <p>Begin Your Journey to Excellence</p>
+                <div class="application-status">
+                    <span class="status-badge open">Applications Open</span>
+                    <span class="deadline">Deadline: March 31, 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <div class="links-grid">
+                    <a href="#requirements" class="quick-link">
+                        <i class="fas fa-list-check"></i>
+                        <span>Requirements</span>
+                    </a>
+                    <a href="#programs" class="quick-link">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Programs</span>
+                    </a>
+                    <a href="#fees" class="quick-link">
+                        <i class="fas fa-money-bill"></i>
+                        <span>Fees</span>
+                    </a>
+                    <a href="#apply-now" class="quick-link">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Apply Now</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="requirements" class="requirements-section">
+            <div class="container">
+                <h2>Admission Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <h3>Undergraduate Programs</h3>
+                        <ul>
+                            <li>WAEC/NECO with minimum of 5 credits</li>
+                            <li>JAMB score of 180 and above</li>
+                            <li>O'Level results in relevant subjects</li>
+                            <li>Post-UTME screening</li>
+                        </ul>
+                    </div>
+
+                    <div class="requirement-card">
+                        <h3>Postgraduate Programs</h3>
+                        <ul>
+                            <li>Bachelor's degree (2.1 or above)</li>
+                            <li>Relevant undergraduate background</li>
+                            <li>Academic transcripts</li>
+                            <li>Research proposal (for PhD)</li>
+                        </ul>
+                    </div>
+
+                    <div class="requirement-card">
+                        <h3>International Students</h3>
+                        <ul>
+                            <li>Equivalent qualifications</li>
+                            <li>English proficiency test</li>
+                            <li>Passport and visa</li>
+                            <li>Financial guarantee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="programs-section">
+            <div class="container">
+                <h2>Available Programs</h2>
+                <div class="faculty-tabs">
+                    <button class="tab-btn active" data-faculty="sciences">Sciences</button>
+                    <button class="tab-btn" data-faculty="engineering">Engineering</button>
+                    <button class="tab-btn" data-faculty="arts">Arts & Humanities</button>
+                    <button class="tab-btn" data-faculty="social">Social Sciences</button>
+                </div>
+                <div class="programs-content active" id="sciences-content">
+                    <div class="program-grid">
+                        <div class="program-card">
+                            <h3>Computer Science</h3>
+                            <p>B.Sc. Computer Science</p>
+                            <ul>
+                                <li>Duration: 4 years</li>
+                                <li>Available Slots: 150</li>
+                                <li>JAMB Subjects: Mathematics, Physics, English</li>
+                            </ul>
+                            <a href="#apply-now" class="btn-apply">Apply Now</a>
+                        </div>
+                        <!-- More program cards -->
+                    </div>
+                </div>
+                <!-- More faculty content sections -->
+            </div>
+        </section>
+
+        <section id="fees" class="fees-section">
+            <div class="container">
+                <h2>Application Fees & Tuition</h2>
+                <div class="fees-grid">
+                    <div class="fee-card">
+                        <h3>Application Fees</h3>
+                        <div class="fee-amount">₦10,000</div>
+                        <ul>
+                            <li>Online application processing</li>
+                            <li>Screening test</li>
+                            <li>Document verification</li>
+                        </ul>
+                    </div>
+
+                    <div class="fee-card">
+                        <h3>Undergraduate Tuition</h3>
+                        <div class="fee-amount">From ₦150,000/year</div>
+                        <ul>
+                            <li>Varies by program</li>
+                            <li>Payment plans available</li>
+                            <li>Scholarships available</li>
+                        </ul>
+                    </div>
+
+                    <div class="fee-card">
+                        <h3>Postgraduate Tuition</h3>
+                        <div class="fee-amount">From ₦250,000/year</div>
+                        <ul>
+                            <li>Research fees included</li>
+                            <li>Laboratory fees extra</li>
+                            <li>Assistantships available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apply-now" class="application-form">
+            <div class="container">
+                <h2>Start Your Application</h2>
+                <form id="applicationForm" class="apply-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of Birth *</label>
+                                <input type="date" id="dob" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nationality">Nationality *</label>
+                                <select id="nationality" required>
+                                    <option value="">Select Nationality</option>
+                                    <option value="nigerian">Nigerian</option>
+                                    <option value="international">International</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Academic Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="program">Desired Program *</label>
+                                <select id="program" required>
+                                    <option value="">Select Program</option>
+                                    <option value="computer-science">B.Sc. Computer Science</option>
+                                    <option value="chemistry">B.Sc. Chemistry</option>
+                                    <!-- More options -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="entry">Entry Level *</label>
+                                <select id="entry" required>
+                                    <option value="">Select Entry Level</option>
+                                    <option value="undergraduate">Undergraduate</option>
+                                    <option value="postgraduate">Postgraduate</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="jamb">JAMB Score (if applicable)</label>
+                                <input type="number" id="jamb" min="0" max="400">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Documents Upload</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="olevel">O'Level Results *</label>
+                                <input type="file" id="olevel" accept=".pdf,.jpg,.png" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="passport">Passport Photograph *</label>
+                                <input type="file" id="passport" accept=".jpg,.png" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="transcript">Academic Transcript</label>
+                                <input type="file" id="transcript" accept=".pdf">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn-save">Save Draft</button>
+                        <button type="submit" class="btn-submit">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="application-guide">
+            <div class="container">
+                <h2>Application Guide</h2>
+                <div class="guide-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Create Account</h3>
+                        <p>Register on the portal with your email</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Fill Application</h3>
+                        <p>Complete all required information</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Pay Fees</h3>
+                        <p>Make application fee payment</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Submit Documents</h3>
+                        <p>Upload all required documents</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3>Track Status</h3>
+                        <p>Monitor your application progress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="important-dates">
+            <div class="container">
+                <h2>Important Dates</h2>
+                <div class="dates-timeline">
+                    <div class="date-item">
+                        <div class="date">January 1, 2025</div>
+                        <div class="event">Applications Open</div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date">March 31, 2025</div>
+                        <div class="event">Application Deadline</div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date">April 15, 2025</div>
+                        <div class="event">Screening Tests</div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date">May 1, 2025</div>
+                        <div class="event">Admission Offers</div>
+                    </div>
+                    <div class="date-item">
+                        <div class="date">September 2025</div>
+                        <div class="event">Classes Begin</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What are the minimum requirements?</h3>
+                        <p>Minimum of 5 credits in WAEC/NECO including English and Mathematics, plus JAMB score of 180.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How long is the application process?</h3>
+                        <p>The entire process typically takes 6-8 weeks from application to admission decision.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I apply for multiple programs?</h3>
+                        <p>Yes, you can apply for up to two programs but will need to pay separate application fees.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are there scholarship opportunities?</h3>
+                        <p>Yes, various merit-based and need-based scholarships are available for eligible students.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-support">
+            <div class="container">
+                <h2>Need Help?</h2>
+                <div class="support-options">
+                    <div class="support-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Support</h3>
+                        <p>admissions@ilarouniversity.edu.ng</p>
+                    </div>
+                    <div class="support-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone Support</h3>
+                        <p>+234 123 456 7890</p>
+                    </div>
+                    <div class="support-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Live Chat</h3>
+                        <button class="btn-chat">Start Chat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Program tabs switching
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.programs-content').forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                this.classList.add('active');
+                document.getElementById(this.dataset.faculty + '-content').classList.add('active');
+            });
+        });
+
+        // Form validation and submission
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form submission logic here
+            alert('Application submitted successfully!');
+        });
+
+        // Save draft functionality
+        document.querySelector('.btn-save').addEventListener('click', function() {
+            // Add save draft logic here
+            alert('Application draft saved!');
+        });
+    </script>
+</body>
+</html>

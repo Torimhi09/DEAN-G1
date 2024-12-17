@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Facilities - Ilaro University</title>
+    <link rel="stylesheet" href="facilities.css">
+    <link rel="stylesheet" href="facilities2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Ilaro University Logo">
+                
+            </a>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation items -->
+        </nav>
+    </header>
+
+    <main class="facilities-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Campus Facilities</h1>
+                <p>State-of-the-art infrastructure for academic excellence</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="facilities-nav">
+                <button class="facility-nav-btn active" data-category="academic">Academic</button>
+                <button class="facility-nav-btn" data-category="research">Research</button>
+                <button class="facility-nav-btn" data-category="sports">Sports</button>
+                <button class="facility-nav-btn" data-category="residential">Residential</button>
+                <button class="facility-nav-btn" data-category="support">Support</button>
+            </div>
+
+            <div class="facilities-grid active" id="academic">
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/Lib.jpeg" alt="University Library">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Central Library</h3>
+                        <p>A modern learning hub with over 100,000 books and digital resources</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-clock"></i> 24/7 Access</li>
+                            <li><i class="fas fa-wifi"></i> Free Wi-Fi</li>
+                            <li><i class="fas fa-users"></i> Study Rooms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/lecture.jpg" alt="Lecture Halls">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Lecture Halls</h3>
+                        <p>Modern lecture theaters equipped with multimedia facilities</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-tv"></i> Smart Boards</li>
+                            <li><i class="fas fa-volume-up"></i> Audio Systems</li>
+                            <li><i class="fas fa-temperature-low"></i> Air Conditioning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/lab.jpeg" alt="Computer Labs">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Computer Labs</h3>
+                        <p>Advanced computing facilities with latest software and hardware</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-desktop"></i> High-End PCs</li>
+                            <li><i class="fas fa-network-wired"></i> Fast Internet</li>
+                            <li><i class="fas fa-print"></i> Printing Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facilities-grid" id="research">
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/research.jpeg" alt="Research Labs">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Research Laboratories</h3>
+                        <p>State-of-the-art research facilities for scientific innovation</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-flask"></i> Advanced Equipment</li>
+                            <li><i class="fas fa-shield-alt"></i> Safety Systems</li>
+                            <li><i class="fas fa-microscope"></i> Specialized Tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/innovation.jpeg" alt="Innovation Hub">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Innovation Hub</h3>
+                        <p>Collaborative space for research and innovation projects</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-lightbulb"></i> Innovation Labs</li>
+                            <li><i class="fas fa-users"></i> Meeting Rooms</li>
+                            <li><i class="fas fa-robot"></i> Tech Workshops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facilities-grid" id="sports">
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/stadium.jpeg" alt="Sports Stadium">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Sports Stadium</h3>
+                        <p>Multi-purpose stadium for various sporting events</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-running"></i> Athletic Track</li>
+                            <li><i class="fas fa-futbol"></i> Football Field</li>
+                            <li><i class="fas fa-users"></i> Spectator Stands</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/center.jpeg" alt="Fitness Center">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Fitness Center</h3>
+                        <p>Modern gym equipped with latest fitness equipment</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-dumbbell"></i> Modern Equipment</li>
+                            <li><i class="fas fa-user-friends"></i> Personal Training</li>
+                            <li><i class="fas fa-shower"></i> Changing Rooms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facilities-grid" id="residential">
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/hostel.jpg" alt="Student Hostels">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Student Hostels</h3>
+                        <p>Comfortable accommodation facilities for students</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-bed"></i> Furnished Rooms</li>
+                            <li><i class="fas fa-wifi"></i> Internet Access</li>
+                            <li><i class="fas fa-shield-alt"></i> 24/7 Security</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/cafe.jpg" alt="Cafeteria">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Campus Cafeteria</h3>
+                        <p>Modern dining facilities with diverse food options</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-utensils"></i> Multiple Cuisines</li>
+                            <li><i class="fas fa-chair"></i> Spacious Seating</li>
+                            <li><i class="fas fa-clock"></i> Extended Hours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facilities-grid" id="support">
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/health.jpg" alt="Health Center">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Health Center</h3>
+                        <p>24/7 medical facility for student healthcare needs</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-user-md"></i> Medical Staff</li>
+                            <li><i class="fas fa-ambulance"></i> Emergency Services</li>
+                            <li><i class="fas fa-pills"></i> Pharmacy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="img/counsel.jpg" alt="Counseling Center">
+                        <div class="facility-overlay">
+                            <button class="btn-view">View Details</button>
+                        </div>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Counseling Center</h3>
+                        <p>Professional counseling and support services</p>
+                        <ul class="facility-features">
+                            <li><i class="fas fa-comments"></i> Counseling Services</li>
+                            <li><i class="fas fa-user-friends"></i> Group Sessions</li>
+                            <li><i class="fas fa-lock"></i> Confidential Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="facilityModal" class="modal">
+            <div class="modal-content facility-modal">
+                <span class="close-modal">&times;</span>
+                <div class="facility-details">
+                    <div class="facility-gallery">
+                        <img src="" alt="Facility Image" id="modalImage">
+                        <div class="gallery-nav">
+                            <button class="gallery-btn prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="gallery-btn next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalDescription"></p>
+                        <div class="facility-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="meta-info">
+                                    <span>Operating Hours</span>
+                                    <strong id="modalHours"></strong>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="meta-info">
+                                    <span>Location</span>
+                                    <strong id="modalLocation"></strong>
+                                </div>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="meta-info">
+                                    <span>Contact</span>
+                                    <strong id="modalContact"></strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facility-amenities">
+                            <h3>Amenities</h3>
+                            <ul id="modalAmenities"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // Navigation
+        const facilityBtns = document.querySelectorAll('.facility-nav-btn');
+        const facilityGrids = document.querySelectorAll('.facilities-grid');
+
+        facilityBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.dataset.category;
+                
+                facilityBtns.forEach(b => b.classList.remove('active'));
+                facilityGrids.forEach(grid => grid.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(category).classList.add('active');
+            });
+        });
+
+        // Modal
+        const modal = document.getElementById('facilityModal');
+        const viewBtns = document.querySelectorAll('.btn-view');
+        const closeModal = document.querySelector('.close-modal');
+
+        const facilityData = {
+            'Central Library': {
+                images: ['library1.jpg', 'library2.jpg', 'library3.jpg'],
+                description: 'Our state-of-the-art library features extensive collections, digital resources, and comfortable study spaces. With over 100,000 books, journals, and online databases, it serves as the primary research and study hub for our academic community.',
+                hours: 'Open 24/7',
+                location: 'Central Campus',
+                contact: '+234 123 456 7890',
+                amenities: [
+                    'Individual Study Carrels',
+                    'Group Study Rooms',
+                    'Computer Workstations',
+                    'Printing & Scanning Services',
+                    'Research Consultation',
+                    'Digital Media Lab'
+                ]
+            },
+            // Add data for other facilities
+        };
+
+        viewBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.facility-card');
+                const title = card.querySelector('h3').textContent;
+                const data = facilityData[title];
+
+                if (data) {
+                    document.getElementById('modalTitle').textContent = title;
+                    document.getElementById('modalDescription').textContent = data.description;
+                    document.getElementById('modalHours').textContent = data.hours;
+                    document.getElementById('modalLocation').textContent = data.location;
+                    document.getElementById('modalContact').textContent = data.contact;
+
+                    const amenitiesList = document.getElementById('modalAmenities');
+                    amenitiesList.innerHTML = data.amenities.map(item => `<li><i class="fas fa-check"></i>${item}</li>`).join('');
+
+                    document.getElementById('modalImage').src = card.querySelector('.facility-image img').src;
+                }
+
+                modal.style.display = 'block';
+            });
+        });
+
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Gallery Navigation
+        let currentImageIndex = 0;
+        const prevBtn = document.querySelector('.gallery-btn.prev');
+        const nextBtn = document.querySelector('.gallery-btn.next');
+
+        function updateGalleryImage() {
+            const title = document.getElementById('modalTitle').textContent;
+            const data = facilityData[title];
+            if (data && data.images) {
+                document.getElementById('modalImage').src = `../../images/facilities/${data.images[currentImageIndex]}`;
+            }
+        }
+
+        prevBtn.addEventListener('click', () => {
+            const title = document.getElementById('modalTitle').textContent;
+            const data = facilityData[title];
+            if (data && data.images) {
+                currentImageIndex = (currentImageIndex - 1 + data.images.length) % data.images.length;
+                updateGalleryImage();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const title = document.getElementById('modalTitle').textContent;
+            const data = facilityData[title];
+            if (data && data.images) {
+                currentImageIndex = (currentImageIndex + 1) % data.images.length;
+                updateGalleryImage();
+            }
+        });
+    </script>
+</body>
+</html>

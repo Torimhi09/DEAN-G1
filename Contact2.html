@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ilaro University</title>
+    <link rel="stylesheet" href="Contact3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Ilaro University Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <!-- Navigation items -->
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="hero-section">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with Ilaro University</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card emergency">
+                        <div class="info-icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Emergency Contact</h3>
+                            <p>For immediate assistance:</p>
+                            <a href="tel:+2341234567890" class="emergency-number">+234 123 456 7890</a>
+                            <span class="availability">Available 24/7</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="method-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Visit Us</h3>
+                            <p>Ilaro University Campus<br>Ogun State, Nigeria</p>
+                            <a href="#map" class="btn-directions">Get Directions</a>
+                        </div>
+
+                        <div class="method-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Call Us</h3>
+                            <p>Main Office: +234 123 456 7890<br>Admissions: +234 123 456 7891</p>
+                            <span class="hours">Mon-Fri: 8:00 AM - 5:00 PM</span>
+                        </div>
+
+                        <div class="method-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p>General Inquiries:<br>info@ilarouniversity.edu.ng</p>
+                            <p>Admissions:<br>admissions@ilarouniversity.edu.ng</p>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form" onsubmit="return validateForm(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Department/Office *</label>
+                            <select id="department" name="department" required>
+                                <option value="">Select Department</option>
+                                <option value="admissions">Admissions Office</option>
+                                <option value="academics">Academic Affairs</option>
+                                <option value="finance">Finance Department</option>
+                                <option value="student-affairs">Student Affairs</option>
+                                <option value="it">IT Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group recaptcha-container">
+                            <div class="g-recaptcha" data-sitekey="your-recaptcha-site-key"></div>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="map" class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2337674382394!2d3.0137899147715993!3d7.098333994874775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b4ed3925f3c6d%3A0x48949c01a1f7613a!2sFederal%20Polytechnic%20Ilaro!5e0!3m2!1sen!2sng!4v1623456789012!5m2!1sen!2sng"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer content -->
+    </footer>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for contacting us. We'll get back to you shortly.</p>
+                <button class="btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+
+            // Get reCAPTCHA response
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+                alert('Please complete the reCAPTCHA verification');
+                return false;
+            }
+
+            // Form validation
+            const form = document.getElementById('contactForm');
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return false;
+            }
+
+            // Show success modal
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'block';
+
+            // Reset form and reCAPTCHA
+            form.reset();
+            grecaptcha.reset();
+
+            return false;
+        }
+
+        // Modal handling
+        const modal = document.getElementById('successModal');
+        const closeBtn = document.querySelector('.close-modal');
+        const closeModalBtn = document.querySelector('.btn-close');
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        closeModalBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
